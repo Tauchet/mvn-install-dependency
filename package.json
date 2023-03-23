@@ -1,0 +1,21 @@
+{
+  "name": "mvn-install-dependency",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "mvnid": "./src/bin.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "adm-zip": "0.5.10",
+    "picocolors": "1.0.0",
+    "yaml": "2.2.1"
+  }
+}
