@@ -18,7 +18,7 @@ export function extractInitialData(pathname) {
         return data;
     }
 
-    const pluginYaml = YAML.parse(pluginYml.getData().toString('utf-8'));
+    const pluginYaml = YAML.parse(pluginYml.getData().toString('utf-8'), {uniqueKeys: false});
     data.groupId = (pluginYaml.main || "").split("\.").filter(x => x.toLowerCase() == x).join(".");
     data.artifactId = pluginYaml.name || null;
     data.version = pluginYaml.version || null;
